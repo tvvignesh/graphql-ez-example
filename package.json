@@ -1,0 +1,24 @@
+{
+  "name": "ez-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-ez/fastify": "^0.2.1",
+    "@graphql-ez/plugin-graphiql": "^0.1.0",
+    "@graphql-ez/plugin-modules": "^0.1.1",
+    "@graphql-ez/plugin-scalars": "^0.1.0",
+    "fastify": "^3.18.0",
+    "graphql": "^15.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4"
+  }
+}
