@@ -16,6 +16,11 @@
   dependencies:
     "@envelop/types" "0.2.1"
 
+"@envelop/disable-introspection@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@envelop/disable-introspection/-/disable-introspection-0.2.0.tgz#516974a132444b1ee02b21c46b78223fb3fd9823"
+  integrity sha512-1XgmCPXxVb2t6rWVsmFUcWRH2dwEF4oZIu8hiRTvRfmJMvX65/ZwoJCZzHoLx2ZYiNVgs7k9RwYRGv7HEb0hQQ==
+
 "@envelop/graphql-modules@^0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@envelop/graphql-modules/-/graphql-modules-0.2.0.tgz#e1b2713c8c01428cc0b4b18a9deed2c4172ec189"
@@ -47,71 +52,34 @@
   dependencies:
     ajv "^6.12.6"
 
-"@graphql-ez/core-types@^0.2.0", "@graphql-ez/core-types@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@graphql-ez/core-types/-/core-types-0.2.2.tgz#8440eaebb462dd2f3737ab2b85848a3908b2445b"
-  integrity sha512-OosftQpO5ZRmxmOjJPXztggUcxpllmCGFR5pMGFENFsZuxQZE8slTBm5+rAD5s92pZqFz8CkkIoIB0B3cpKvmQ==
+"@graphql-ez/fastify@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@graphql-ez/fastify/-/fastify-0.5.1.tgz#1d6d7a74cadc2a1023b83ff587b205e0e4852d93"
+  integrity sha512-qEGuA+4OF/F6PrqunzEg3+KvChbxO9pG3YTB3MMZjmNkOr9ZMg9BdT+3JfTq/zt4u/r9gIWGoYPcm4mI/tzaRA==
   dependencies:
-    "@envelop/types" "^0.2.1"
-
-"@graphql-ez/core-utils@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@graphql-ez/core-utils/-/core-utils-0.2.0.tgz#8c5dba73288e31db857fb154c08f79ce8d958ab8"
-  integrity sha512-nGxWI2glgB3gsO3tPbJnGhm4wJhMpS0raEcCXuFQ6tpJJ2C7xKkdYdqN5y9vcBJm5RBRR3sZu33yBwEJHCuYbg==
-  dependencies:
-    "@graphql-ez/core-types" "^0.2.0"
-
-"@graphql-ez/core@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@graphql-ez/core/-/core-0.2.2.tgz#2b4c660300d06c48b18cc03b9fb73a857e735ea3"
-  integrity sha512-PoY9zoth2MsrShZqGR36QUL3CkclHyipb0zQPa1hbtf9FT3dYbcaQZt2Q6rHy38CNW/VrLpMQPFBeIz03wpoAQ==
-  dependencies:
-    "@envelop/core" "^0.3.1"
-    "@envelop/parser-cache" "^0.2.0"
-    "@envelop/validation-cache" "^0.2.0"
-    "@graphql-ez/core-types" "^0.2.2"
-    "@graphql-ez/core-utils" "^0.2.0"
-    "@graphql-tools/merge" "^6.2.14"
-    "@graphql-tools/schema" "^7.1.5"
-    graphql-helix "1.6.1"
-
-"@graphql-ez/fastify@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@graphql-ez/fastify/-/fastify-0.2.1.tgz#46f5545f927f9274246fa5ba0d443e0230ae08d2"
-  integrity sha512-ZjFaf5iseDZxa1UjirsgpD9qcOL4D/Vt6aH+o5jMtnQ/JMeaK3qG40BDJjAZVzNwVV/7sv/rWXAYgw1kReSZ4g==
-  dependencies:
-    "@graphql-ez/core" "^0.2.2"
-    "@graphql-ez/core-types" "^0.2.2"
-    "@graphql-ez/core-utils" "^0.2.0"
     fastify-cors "^6.0.1"
 
-"@graphql-ez/plugin-graphiql@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@graphql-ez/plugin-graphiql/-/plugin-graphiql-0.1.0.tgz#8a95de60bf6e3b415102c44cab82acbe27c7e576"
-  integrity sha512-u1sG2aWuONrqc7YDItwEA6YpoPKR3nhyCQCLOb6Wiq1A6372sX1OBcnHs8ughmMvacWhc67HQlvOII7Y7BHPjA==
+"@graphql-ez/plugin-graphiql@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@graphql-ez/plugin-graphiql/-/plugin-graphiql-0.3.1.tgz#bb56680de9f43ee93b05efbfb9d0826f9a355ec1"
+  integrity sha512-KXq5Su6Vxxgx+sUWEuRd9+mL7lk1uRV5H08VN7cJDLXP/0w7y1tjKA/Ou9itk84LdMY8KO3qRQi6C+AL15OO/g==
   dependencies:
-    "@graphql-ez/core-types" "^0.2.0"
-    "@graphql-ez/core-utils" "^0.2.0"
     graphql-helix "1.6.1"
 
-"@graphql-ez/plugin-modules@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@graphql-ez/plugin-modules/-/plugin-modules-0.1.1.tgz#d8618bc5b9a59dc7e2f22c1e678e3fef21a28823"
-  integrity sha512-0be2UPRPEmmshxUhQCZTA4JgpII6q5EDHCeYdv56oGXUrbqL5v1tkLSJp67ddrbbLarE4uZ9He1AGnMQt+hmyA==
+"@graphql-ez/plugin-modules@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@graphql-ez/plugin-modules/-/plugin-modules-0.3.1.tgz#6c1e801f8673a6244348b30710f7cb3d30d67f2d"
+  integrity sha512-voexllBBh1wt3Idk7bxHg9EeRk2RwBPWtbCXPawqU1D6hVurXiLGlGvo0op0SO8CNw/zadk9JMg4W3gVSxP0TA==
   dependencies:
     "@envelop/graphql-modules" "^0.2.0"
-    "@graphql-ez/core-types" "^0.2.2"
-    "@graphql-ez/core-utils" "^0.2.0"
     "@graphql-tools/utils" "^7.10.0"
     graphql-modules "^1.4.3"
 
-"@graphql-ez/plugin-scalars@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@graphql-ez/plugin-scalars/-/plugin-scalars-0.1.0.tgz#74288678aa474d437e11f0bc9589330a25f44b16"
-  integrity sha512-Lya7m0XCnYOTDIv1z69+mxdCfNaFftzDI806xOY9ZulRNn1s2F2kgUpr7eigQRh9GvruqoH7GMXMpf9q2Iq4dg==
+"@graphql-ez/plugin-scalars@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@graphql-ez/plugin-scalars/-/plugin-scalars-0.3.1.tgz#eeabae027be633f8ee89cfd35c7ea88ea1521a8b"
+  integrity sha512-nkdlYDYF/HxQQsNYIc8hhSFiLdTR9ft6rAW7XbfsfX/0Nrmoo683CBSRv44B4WWehiKDiGTy1+uE1Qw24oJlQA==
   dependencies:
-    "@graphql-ez/core-types" "^0.2.0"
-    "@graphql-ez/core-utils" "^0.2.0"
     "@graphql-tools/utils" "^7.10.0"
     graphql-scalars "^1.10.0"
 
@@ -357,6 +325,21 @@ forwarded@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.2.0.tgz#2269936428aad4c15c7ebe9779a84bf0b2a81811"
   integrity sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==
+
+graphql-ez@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/graphql-ez/-/graphql-ez-0.5.0.tgz#224c7d76f2b272a17d126f93c399fd7d103549f8"
+  integrity sha512-oje72SZTO6fR2Md+u4tKlRVPIqUSosncgkJVXEK94A3aEEaj9L4zZ9n6dqtDwO8MOCgcE4HcxHWJ0suZSFXowA==
+  dependencies:
+    "@envelop/core" "^0.3.1"
+    "@envelop/disable-introspection" "^0.2.0"
+    "@envelop/parser-cache" "^0.2.0"
+    "@envelop/types" "^0.2.1"
+    "@envelop/validation-cache" "^0.2.0"
+    "@graphql-tools/merge" "^6.2.14"
+    "@graphql-tools/schema" "^7.1.5"
+    "@graphql-tools/utils" "^7.10.0"
+    graphql-helix "1.6.1"
 
 graphql-helix@1.6.1:
   version "1.6.1"

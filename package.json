@@ -11,12 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@graphql-ez/fastify": "^0.2.1",
-    "@graphql-ez/plugin-graphiql": "^0.1.0",
-    "@graphql-ez/plugin-modules": "^0.1.1",
-    "@graphql-ez/plugin-scalars": "^0.1.0",
+    "@graphql-ez/fastify": "^0.5.1",
+    "@graphql-ez/plugin-graphiql": "^0.3.1",
+    "@graphql-ez/plugin-modules": "^0.3.1",
+    "@graphql-ez/plugin-scalars": "^0.3.1",
     "fastify": "^3.18.0",
-    "graphql": "^15.5.1"
+    "graphql": "^15.5.1",
+    "graphql-ez": "^0.5.0"
   },
   "devDependencies": {
     "@types/node": "^15.12.4"
