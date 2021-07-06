@@ -31,6 +31,7 @@ function buildContext({ req }: BuildContextArgs) {
     };
 }
 
+// Leverage Typescript augmentation
 declare module 'graphql-ez' {
   interface EZContext extends InferContext<typeof buildContext> {}
 }
