@@ -1,2 +1,5 @@
-import './first';
-import './second';
+import './feed';
+import './post';
+import './user';
+import './vote';
+
