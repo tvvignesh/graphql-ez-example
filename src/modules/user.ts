@@ -1,7 +1,7 @@
 import { gql } from '@graphql-ez/plugin-schema';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { APP_SECRET } from '../utils/utils.js';
+import { APP_SECRET } from '../utils.js';
 
 export const typeDefs = gql`
     type Query {

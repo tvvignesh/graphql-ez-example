@@ -6,7 +6,7 @@ import { ezWebSockets } from '@graphql-ez/plugin-websockets';
 import { PrismaClient } from '@prisma/client';
 import { PubSub } from 'graphql-subscriptions';
 import { schema } from './modules';
-import { getUserId } from './utils/utils';
+import { getUserId } from './utils.js';
 
 // Initialize a pubsub instance to emit events to be used for GraphQL Subscriptions
 
