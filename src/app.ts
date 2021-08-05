@@ -1,10 +1,11 @@
-import { BuildContextArgs, CreateApp, gql, InferContext } from '@graphql-ez/fastify';
+import { BuildContextArgs, CreateApp, InferContext } from '@graphql-ez/fastify';
 import { ezGraphiQLIDE } from '@graphql-ez/plugin-graphiql';
-import { ezGraphQLModules } from '@graphql-ez/plugin-modules';
 import { ezScalars } from '@graphql-ez/plugin-scalars';
+import { ezSchema } from '@graphql-ez/plugin-schema';
 import { ezWebSockets } from '@graphql-ez/plugin-websockets';
 import { PrismaClient } from '@prisma/client';
 import { PubSub } from 'graphql-subscriptions';
+import { schema } from './modules';
 import { getUserId } from './utils/utils';
 
 // Initialize a pubsub instance to emit events to be used for GraphQL Subscriptions
@@ -36,14 +37,16 @@ declare module 'graphql-ez' {
   interface EZContext extends InferContext<typeof buildContext> {}
 }
 
-// Create GraphQL APP by bootstrapping it with the plugins we need (GraphiQL, GraphQL Modules, GraphQL Scalars, GraphQL WS)
+// Create GraphQL APP by bootstrapping it with the plugins we need (GraphiQL, GraphQL Scalars, GraphQL WS)
 
-export const { registerModule, buildApp } = CreateApp({
+export const ezApp = CreateApp({
     buildContext,
     ez: {
       plugins: [
+        ezSchema({
+          schema: schema
+        }),
         ezGraphiQLIDE(),
-        ezGraphQLModules(),
         ezScalars({
             DateTime: 1,
         }),
@@ -51,5 +54,3 @@ export const { registerModule, buildApp } = CreateApp({
       ],
     }
 });
-
-export { gql };
